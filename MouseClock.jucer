@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="DMW2Ds" name="MouseClock" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.MouseClock" includeBinaryInAppConfig="1"
+              jucerVersion="5.2.0" displaySplashScreen="1" reportAppUsage="1"
+              splashScreenColour="Dark" cppLanguageStandard="11" companyCopyright="">
+  <MAINGROUP id="KwW2Zw" name="MouseClock">
+    <GROUP id="{DB6A3D43-8DE4-A657-7066-956F4A5E29F4}" name="Source">
+      <FILE id="fkNwE6" name="ClockView.cpp" compile="1" resource="0" file="Source/ClockView.cpp"/>
+      <FILE id="gKnspp" name="ClockView.h" compile="0" resource="0" file="Source/ClockView.h"/>
+      <FILE id="NDFTI4" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="GGv847" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="pD1k5F" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2013 targetFolder="Builds/VisualStudio2013">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="MouseClock" debugInformationFormat="ProgramDatabase"
+                       enablePluginBinaryCopyStep="0"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="MouseClock" debugInformationFormat="ProgramDatabase"
+                       enablePluginBinaryCopyStep="0" linkTimeOptimisation="1"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="..\juce\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\juce\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\juce\modules"/>
+        <MODULEPATH id="juce_events" path="..\juce\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\juce\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\juce\modules"/>
+        <MODULEPATH id="juce_core" path="..\juce\modules"/>
+      </MODULEPATHS>
+    </VS2013>
+    <VS2015 targetFolder="Builds/VisualStudio2015" windowsTargetPlatformVersion="8.1">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="0" isDebug="1" optimisation="1" targetName="MouseClock"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       debugInformationFormat="ProgramDatabase" enablePluginBinaryCopyStep="0"
+                       linkTimeOptimisation="1" isDebug="0" optimisation="3" targetName="MouseClock"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="..\juce\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\juce\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\juce\modules"/>
+        <MODULEPATH id="juce_events" path="..\juce\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\juce\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\juce\modules"/>
+        <MODULEPATH id="juce_core" path="..\juce\modules"/>
+      </MODULEPATHS>
+    </VS2015>
+    <ANDROIDSTUDIO targetFolder="Builds/Android" androidSDKPath="" androidNDKPath=""
+                   androidMinimumSDK="19" androidDependencies="compile 'com.android.support:support-v4:26.0.0-alpha1'">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" androidArchitectures="armeabi-v7a x86" isDebug="1"
+                       optimisation="1" linkTimeOptimisation="0" targetName="MouseClock"/>
+        <CONFIGURATION name="Release" androidArchitectures="armeabi-v7a x86" isDebug="0"
+                       optimisation="3" linkTimeOptimisation="1" targetName="MouseClock"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="..\juce\modules"/>
+        <MODULEPATH id="juce_gui_basics" path="..\juce\modules"/>
+        <MODULEPATH id="juce_graphics" path="..\juce\modules"/>
+        <MODULEPATH id="juce_events" path="..\juce\modules"/>
+        <MODULEPATH id="juce_data_structures" path="..\juce\modules"/>
+        <MODULEPATH id="juce_cryptography" path="..\juce\modules"/>
+        <MODULEPATH id="juce_core" path="..\juce\modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+    <CODEBLOCKS_LINUX targetFolder="Builds/CodeBlocksLinux">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" linuxCodeBlocksArchitecture="-m64" isDebug="1" optimisation="1"
+                       linkTimeOptimisation="0" targetName="MouseClock"/>
+        <CONFIGURATION name="Release" linuxCodeBlocksArchitecture="-m64" isDebug="0"
+                       optimisation="3" linkTimeOptimisation="1" targetName="MouseClock"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="../../juce"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce"/>
+        <MODULEPATH id="juce_graphics" path="../../juce"/>
+        <MODULEPATH id="juce_events" path="../../juce"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce"/>
+        <MODULEPATH id="juce_cryptography" path="../../juce"/>
+        <MODULEPATH id="juce_core" path="../../juce"/>
+      </MODULEPATHS>
+    </CODEBLOCKS_LINUX>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
