@@ -65,10 +65,17 @@ public:
                                         Colours::lightgrey,
                                         DocumentWindow::allButtons)
         {
+        #if JUCE_ANDROID
+            setUsingNativeTitleBar (true);
+        #endif
             setContentOwned (new MainContentComponent(), true);
+        #if JUCE_ANDROID
+            setFullScreen (true); // set to fullscreen rather than call centreWithSize()
+        #else
 			setResizable(true,false);
 			setResizeLimits(440, 280, 0x3fffffff, 0x3fffffff);
             centreWithSize (getWidth(), getHeight());
+        #endif
             setVisible (true);
         }
 

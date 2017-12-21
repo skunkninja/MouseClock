@@ -54,7 +54,7 @@
       </MODULEPATHS>
     </VS2015>
     <ANDROIDSTUDIO targetFolder="Builds/Android" androidSDKPath="" androidNDKPath=""
-                   androidMinimumSDK="19" androidDependencies="compile 'com.android.support:support-v4:26.0.0-alpha1'">
+                   androidMinimumSDK="25" androidDependencies="compile 'com.android.support:support-v4:26.0.0-alpha1'">
       <CONFIGURATIONS>
         <CONFIGURATION name="Debug" androidArchitectures="armeabi-v7a x86" isDebug="1"
                        optimisation="1" linkTimeOptimisation="0" targetName="MouseClock"/>
